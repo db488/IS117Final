@@ -7,30 +7,78 @@
     <link rel="canonical" href="" />
     <title>Scion tC Guide</title>
     <meta name="description" content="Scion TC Guide">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		* {box-sizing: border-box;}
+
+		input[type=text], select, textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 6px;
+			margin-bottom: 16px;
+			resize: vertical;
+		}
+
+		input[type=button] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=button]:hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+	</style>
 
 </head>
 
 <body>
 	<header>
-		<div id="logo"><img src="../Images/logo.png">Scion Page</div>
+		<div id="logo"><p><a href="../index.html"><img src="../Images/logo.png"  alt="logo"></a>Scion Page</p></div>
 		<nav>  
 			<ul>
 				<li><a href="../index.html">Home</a>
 				<li><a href="generalInfo.html">General Info</a>
-				<li><a href=popularMods.html">Popular Mods</a>
+				<li><a href="popularMods.html">Popular Mods</a>
 				<li><a href="contact.html">Contact</a>
 			</ul>
 		</nav>
 	</header>
 	<section>
-		<strong>A Buyer's Guide To The First Generation Of Scion TC's (2005-2010)</strong>
+		<strong>Contact Us!</strong>
 	</section>
 	<section id="pageContent">
 		<main role="main">
-			<article>
+			<div class="container">
+				<form action="form_submit.html">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-			</article>
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="email">Email Adress</label>
+					<input type="text" id="email" name="email" placeholder="Your email address..">
+
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write your message.." style="height:200px"></textarea>
+				</form>
+				<button onclick="location.href = 'form_submit.html';" id="myButton" class="float-left submit-button" >Submit</button>
+			</div>
 		</main>
 
 	</section>
