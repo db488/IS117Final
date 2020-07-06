@@ -18,13 +18,25 @@
 
 <body>
 	<header>
+
+
 		<div id="logo"><img src="Images/logo.png" alt="logo">Scion Page</div>
-		<nav>  
+		<nav>
 			<ul>
 				<li><a href="">Home</a>
 				<li><a href="Pages/generalInfo.html">General Info</a>
 				<li><a href="Pages/popularMods.html">Popular Mods</a>
-				<li><a href="Pages/contact.html">Contact</a>
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Contact/Forums
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="Pages/contact.html">Contact</a>
+						<a class="dropdown-item" href="Pages/forums.html">Popular_Forums</a>
+					</div>
+				</li>
+
 			</ul>
 		</nav>
 	</header>
@@ -105,9 +117,14 @@
 			</article>
 		</main>
 		<aside>
-			<div>Sidebar 1</div>
-			<div>Sidebar 2</div>
-			<div>Sidebar 3</div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper,
+				quam vel efficitur rhoncus, felis tellus laoreet ante, tincidunt fringilla
+				lectus diam mattis elit.</div>
+			<div>Nunc volutpat porta ullamcorper. Aenean ipsum massa,
+				blandit vel ex id, cursus aliquet nunc. Nunc non lacinia sapien. Curabitur pellentesque, metus ac feugiat tincidunt, ex urna gravida urna,
+				non imperdiet ipsum est vitae est.</div>
+			<div>Nullam interdum, erat sit amet consectetur
+				finibus, nisi lectus vulputate quam, eu imperdiet nisl turpis eu sem.</div>
 		</aside>
 	</section>
 	<footer>
